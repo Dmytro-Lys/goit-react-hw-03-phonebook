@@ -21,7 +21,7 @@ class App extends Component{
   componentDidUpdate(prevProps, prevState) {
     const prevContacts = prevState.contacts
     const thisContacts = this.state.contacts
-    if ((prevContacts.length || thisContacts.length) && (prevContacts !== thisContacts))  savePhoneBook(thisContacts)
+    if (prevContacts.length !== thisContacts.length)  savePhoneBook(thisContacts)
   }
 
   addContact = contact => {
