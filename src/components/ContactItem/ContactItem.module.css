@@ -1,15 +1,12 @@
-.list {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-}
 .list-item {
   font-size: 18px;
 }
+
 .contact-item {
   display: flex;
   gap: 8px;
 }
+
 .del-btn {
   cursor: pointer;
   font-size: 14px;
